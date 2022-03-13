@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Futura";
+    src: url(../fonts/ftb-book.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Futura";
+}
+
+p {
+    width: fit-content;
+}
+
+.container {
+    width: 100%;
+    padding: 100px 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    padding: 12px 24px;
+    color: white;
+    border: 3px white solid;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+.desc {
+    width: 100;
+    text-align: justify;
+}
+
+.image {
+    width: 200px;
+    border: 3px white solid;
+    border-radius: 9999px;
+    padding: 12px;
+    background-color: #6f4792;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.portfolio {
+    width: 100%;
+    border-radius: 20px;
+}
